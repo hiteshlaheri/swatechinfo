@@ -19,7 +19,13 @@
 			$().UItoTop({ easingType: 'easeOutQuart' });
 		})
 		</script>
-		
+		<style>
+       #map {
+        height: 400px;
+        width: 100%;
+       }
+    </style>
+
 	</head>
 	<body class="">
 <!--==============================header=================================-->
@@ -86,11 +92,26 @@
 		<div class="gray_block gb1">
 			<div class="container_12">
 				<div class="grid_12">
-					<div class="map">
-						<figure class="">
-							<iframe src="https://www.google.com/maps/place/Nandanvan+Society,+Punagam,+Varachha,+Surat,+Gujarat/@21.2051211,72.8656175,17z/data=!3m1!4b1!4m5!3m4!1s0x3be04f09bdd5f959:0xd82a7acaf9f8388a!8m2!3d21.205374!4d72.8679788"></iframe>
-						</figure>
-					</div>
+					 <div id="map"></div>
+    <script>
+      function initMap() {
+        var uluru = {lat: 21.2051211, lng: 72.8656175};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 17,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map,
+	label:'Tatva Technovation',
+ 	title: 'Tatva Technovation',
+          });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC89mH02NfYk2OYoFzxs0rp9yBpS6SSqZY&callback=initMap">
+    </script>
+
 				</div>
 				<div class="grid_4">
 					<h2 class="head1">Address</h2>
