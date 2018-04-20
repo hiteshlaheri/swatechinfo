@@ -298,11 +298,19 @@ h1 a img {
 	margin-top: 42px;
 }
 .comapanyname{
-	text-align: center;
+	text-align: left;
 	color: #585858;
 	font: bold 30px/20px 'Open Sans Condensed', sans-serif;
+	animation: example 15s linear 3s infinite alternate;
+	position: relative;
 }
 
+/* Standard syntax */
+@keyframes example {
+    0%   { left:0px; top:0px;}
+    50%  { left:800px; top:0px;}
+    100% { left:0px; top:0px;}
+}
 #grid .title {
 	padding-top: 14px;
 	font: 300 30px/20px 'Open Sans', sans-serif;
