@@ -246,7 +246,8 @@ header {
 	display: block;
 	position: relative;
 	z-index: 999;
-	padding: 50px 0 0px;
+	/*padding: 50px 0 0px;*/
+        background-image: url(../images/header.gif);
 	border-top: 3px solid #a2cac2;
 	border-bottom: 3px solid #c3dcd7;
 }
@@ -298,12 +299,12 @@ h1 a img {
 	margin-top: 42px;
 }
 .comapanyname{
-	width: 400px;
-	height: 20px;
-	text-align: left;
-	color: #585858;
+	
+	text-align: center;
+	color: #FFFFFF;
+	/*color: #585858;*/
 	font: bold 30px/20px 'Open Sans Condensed', sans-serif;
-	animation: example 15s linear 3s infinite alternate;
+	/*animation: example 15s linear 3s infinite alternate;*/
 	position: relative;
 }
 
