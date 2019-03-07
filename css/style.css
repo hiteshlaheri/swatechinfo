@@ -685,6 +685,7 @@ footer {
 	padding: 55px 0 70px;
 	display: block;
 	text-align: center;
+	background-image: url(../images/header.gif);
 	font-size: 12px;
 	line-height: 14px;
 }
@@ -718,6 +719,10 @@ footer a:hover {
 
 .copy {
 	padding-top: 29px;
+	color: #fff;
+}
+.copy a {
+	color: #fff;
 }
 
 #toTop {
